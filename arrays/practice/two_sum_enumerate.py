@@ -1,16 +1,14 @@
-from typing import List
-
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        map = {}
+        visited = {}
+        
         for i, num in enumerate(nums):
             diff = target - num
-            if diff in map:
-                return [map[diff], i]
-            map[num] = i
-
+            if diff in visited:
+                return [visited[diff], i]
+            visited[num] = i
         return []
+        
 
 s = Solution()
-print(s.twoSum(nums=[3, 4, 5, 6], target=7))
+print(s.twoSum([2,7,9,11,15], 9))
