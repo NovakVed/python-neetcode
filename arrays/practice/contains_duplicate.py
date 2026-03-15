@@ -1,3 +1,5 @@
+from typing import List
+
 def hasDuplicate(nums: List[int]) -> bool:
     return len(set(nums)) < len(nums)
 
