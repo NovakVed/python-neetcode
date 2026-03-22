@@ -17,5 +17,5 @@ class Solution:
                     return res
 
 s = Solution()
-result = s.topKFrequent([1,2,1,2,1,2,3,1,3,2], k=2)
+result = s.topKFrequent([1,2,1,2,1,2,3,1,3,2], 2)
 print(result)
